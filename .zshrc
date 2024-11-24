@@ -112,11 +112,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias clearram="sudo ~/Scripts/clearRAM.sh"
-alias virtualbox-headless="VBoxManage startvm --type headless"
-alias virtualbox-run="VBoxManage startvm"
-
-
 # CUSTOM FUNCTIONS
 #
 # Virtualbox stop
@@ -210,19 +205,4 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=250'
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH=$PATH:/home/aldi/.spicetify
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-
 unsetopt autocd
-
-# pnpm
-export PNPM_HOME="/home/aldi/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
